@@ -102,57 +102,39 @@ h2 {
     text-align: center;
     opacity: 0.9; /* Ligera transparencia para estilo minimalista */
 }
-
-.button-container {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    padding-bottom: 35px;
+.button-primary, .button-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: white; /* Change as needed */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
-
 
 .button-primary {
-    background-color: #3498db;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 25px; /* Botones más redondeados */
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 500;
+    background-color: #3498db; /* Primary button color */
+    border-radius: 15px; /* More rounded corners */
 }
 
-.button-primary a{
-    text-decoration: none;
-    color: rgb(222, 220, 220);
-}
 
 .button-secondary {
-    background-color: transparent;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: 2px solid white;
-    border-radius: 25px; /* Botones más redondeados */
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-.button-secondary a{
-    text-decoration: none;
-    color: rgb(222, 220, 220);
+    background-color: transparent; /* Secondary button color */
+    color: white; /* Text color */
+    border: 2px solid white; /* Border for secondary button */
+    border-radius: 15px; /* More rounded corners */
 }
 
 .button-primary:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
+    background-color: #2980b9; /* Darker shade for hover effect */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 .button-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    transform: translateY(-2px); /* Slight lift effect */
 }
+
 
 /* Ajustes responsive */
 @media (max-width: 768px) {
@@ -172,16 +154,7 @@ h2 {
         padding: 0 1rem;
     }
 
-    .button-container {
-        flex-direction: column;
-        width: 100%;
-        padding: 0 2rem;
-    }
 
-    .button-primary,
-    .button-secondary {
-        width: 100%;
-    }
 }
 
 /* Estilos para la sección de servicios */
@@ -314,9 +287,6 @@ footer {
         font-size: 1em;
     }
 
-    .button-container {
-        flex-direction: column;
-    }
 }
 /* Estilos para los iconos de redes sociales */
 .social-icons {
